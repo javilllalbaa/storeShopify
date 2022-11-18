@@ -1,0 +1,138 @@
+@import "../../index";
+
+.product-container {
+  padding: $space-2;
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .product-container {
+    padding: $space-2;
+  }
+}
+
+@media (min-width: 321px) and (max-width: $breakpoint-mobile-2) {
+  .product-container {
+    padding: 32px 70px;
+    width: 70%;
+  }
+}
+
+@media (min-width: 376px) and (max-width: $breakpoint-mobile-3) {
+  .product-container {
+    width: 54%;
+    padding: 5% 28%;
+  }
+}
+
+@media (min-width: $breakpoint-windows) {
+  .product-container {
+    width: 80%;
+    padding: 5% 2%;
+  }
+}
+
+
+.product-content {
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: $breakpoint-tablet) {
+    display: block !important;
+  }
+}
+
+.container-img {
+  flex: 2 1 auto;
+  text-align: end;
+  @media (max-width: $breakpoint-tablet) {
+    text-align: center !important;
+    .product-image {
+      margin: 0 !important;
+    }
+  }
+}
+
+.product-image {
+  width: 50%;
+  margin: 0 10% 0 40%;
+}
+
+.product-section {
+  flex: 2 1 auto;
+}
+
+.product-id {
+  font-size: $text-5;
+  color: $color-subtitle;
+}
+
+.product-attributes {
+  font-size: $text-5;
+  color: $color-subtitle;
+  list-style-type: disc;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 18px;
+  li {
+    margin-bottom: 10px;
+  }
+}
+
+.product-title {
+  font: {
+    size: $text-3;
+    weight: 500;
+  }
+  margin: 10px 0;
+  margin-top: $space-1;
+  color: $color-title;
+  width: 400px;
+}
+
+.product-amount {
+  font: {
+    size: $text-1;
+    weight: 40%;
+  }
+  padding-top: $space-2;
+}
+
+.product-button {
+  width: 100%;
+  height: 52px;
+  background-color: $button-color;
+  border-radius: 6px;
+  color: $layout-color;
+  font-size: $text-3;
+  text-align: center;
+  margin-top: $space-2;
+  display: flex;
+  align-items: center;
+}
+
+.product-button-content {
+  text-align: center;
+  width: 100%;
+}
+
+.product-description-title {
+  font: {
+    size: $text-2;
+    weight: 400;
+  }
+  margin: 0px;
+  margin-top: 80px;
+}
+
+.product-description {
+  margin-top: $space-2;
+  width: 60%;
+  color: $color-content;
+  font-size: $text-4;
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .product-responsive {
+    width: 100%;
+  }
+}

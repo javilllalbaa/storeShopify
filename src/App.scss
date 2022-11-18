@@ -1,0 +1,12 @@
+@import 'index';
+
+.layout {
+  background-color: $background-color;
+  min-height: calc(100vh - 148px);
+  padding: 15px 160px 15px 160px;
+}
+
+.container {
+  background-color: $layout-color;
+  min-height: calc(100vh - 148px);
+}
